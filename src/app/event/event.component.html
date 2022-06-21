@@ -1,13 +1,19 @@
-<ion-card>
-  <ion-card-header>
-    <p class="text">Charla medioambiental</p>
-  </ion-card-header>
-  <ion-card-content>
-    <p class="text2">Expositores conocidos presentan charla medioambiental para demos...</p>
-    <ion-button ion-item>
-      <p class="button">
-      <ion-icon name="checkbox"></ion-icon> ¡Voy a ir!
-      </p>
-    </ion-button>
-  </ion-card-content>
-</ion-card>
+<p class="card">
+  <ion-card>
+    <ion-card-header>
+      <p class="text">Charla medioambiental</p>
+    </ion-card-header>
+    <ion-card-content style="text-align: center;">
+      <p class="text2">Expositores conocidos presentan charla medioambiental para demos...</p>
+      <br>
+      <ion-button (click)="presentAlert()" ion-item>
+        <p class="button">
+        <ion-icon name="checkbox"></ion-icon> ¡Voy a ir!
+        </p>
+      </ion-button>
+      <br>
+      <br>
+      <p class="text3">20-05-2022 a las 19:00 hrs | Pza. Viña del mar</p>
+    </ion-card-content>
+  </ion-card>
+</p>

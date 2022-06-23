@@ -1,6 +1,12 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Mi perfil</ion-title>
+    <ion-buttons slot="primary" (click)="logOut()">
+      <ion-button fill="solid" color="danger">
+        Cerrar Sesion
+        <ion-icon slot="end" name="close-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -76,13 +82,11 @@
             Próximamente...
           </ion-card-content>
         </ion-card>
-        
-        <ion-infinite-scroll-content
-          loadingSpinner="bubbles"
-          loadingText="Cargando niveles">
+
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Cargando niveles">
         </ion-infinite-scroll-content>
       </ion-infinite-scroll>
-      
+
     </ion-row>
   </ion-grid>
 

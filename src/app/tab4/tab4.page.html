@@ -1,10 +1,94 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-title>Mi perfil</ion-title>
+    <ion-buttons slot="primary" (click)="logOut()">
+      <ion-button fill="solid" color="danger">
+        Cerrar Sesion
+        <ion-icon slot="end" name="close-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid>
 
-  <p>aca empiezas<p>
+    <p class="space"></p>
+
+    <ion-row>
+      <ion-icon class="perfil" name="person-circle-outline"></ion-icon>
+    </ion-row>
+    <ion-row>
+      <ion-label color="primary">Username</ion-label>
+    </ion-row>
+
+    <p class="space"></p>
+
+    <ion-row>
+      <ion-label color="secondary">Estás en el nivel 1</ion-label>
+      <ion-progress-bar value="0.7" size="medium"></ion-progress-bar>
+    </ion-row>
+
+    <p class="space"></p>
+
+    <ion-row>
+      <ion-infinite-scroll>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Beneficios</ion-card-subtitle>
+            <ion-card-title>Nivel 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Próximamente...
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Beneficios</ion-card-subtitle>
+            <ion-card-title>Nivel 2</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Próximamente...
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Beneficios</ion-card-subtitle>
+            <ion-card-title>Nivel 3</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Próximamente...
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Beneficios</ion-card-subtitle>
+            <ion-card-title>Nivel 4</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Próximamente...
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Beneficios</ion-card-subtitle>
+            <ion-card-title>Nivel 5</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Próximamente...
+          </ion-card-content>
+        </ion-card>
+
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Cargando niveles">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>

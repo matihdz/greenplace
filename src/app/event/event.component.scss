@@ -1,34 +1,33 @@
 .text {
     font-size: 1.5em;
     font-weight: bold;
-    color: green;
+    color: #4CAF50;
     text-align: center;
     text-decoration: underline;
 }
 .text2{
     font-size: 1em;
     font-weight: bold;
-    color: green;
+    color: #4CAF50;
     text-align: center;
 }
 .text3{
     font-size: 1em;
     font-weight: bold;
-    color: green;
+    color: #4CAF50;
     text-align: center;
+}
+.white-text{
+    color: white !important;
 }
 .button{
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 4px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    width: 100px;
-    height: 30px;
     font-size: 12px;
-    margin: 4px 2px;
     cursor: pointer;
 }.card{
     background-color:#4CAF50;

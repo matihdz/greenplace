@@ -27,7 +27,7 @@
     "@capacitor/status-bar": "1.0.8",
     "@ionic-native/core": "^5.22.0-beta-1",
     "@ionic-native/google-maps": "^5.27.0-beta-20200630",
-    "@ionic/angular": "^6.1.9",
+    "@ionic/angular": "^6.1.11",
     "@ionic/cordova-builders": "^6.1.0",
     "cordova-browser": "6.0.0",
     "rxjs": "~6.6.0",
@@ -51,7 +51,10 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "cordova-ios": "^6.2.0",
     "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-googlemaps": "^2.7.1",
+    "cordova-plugin-googlemaps-sdk": "github:mapsplugin/cordova-plugin-googlemaps-sdk",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -79,10 +82,21 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "com.googlemaps.ios": {},
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_IOS": "AIzaSyDqSkXPOrxKSLVYpDbOPxNuJ_5K1ExudL4",
+        "API_KEY_FOR_ANDROID": "AIzaSyDqSkXPOrxKSLVYpDbOPxNuJ_5K1ExudL4",
+        "API_KEY_FOR_WINDOWS": "AIzaSyDqSkXPOrxKSLVYpDbOPxNuJ_5K1ExudL4",
+        "API_KEY_FOR_AMAZON": "AIzaSyDqSkXPOrxKSLVYpDbOPxNuJ_5K1ExudL4",
+        "API_KEY_FOR_IOS_WEB": "AIzaSyDqSkXPOrxKSLVYpDbOPxNuJ_5K1ExudL4",
+        "API_KEY_FOR_ANDROID_WEB": "AIzaSyDqSkXPOrxKSLVYpDbOPxNuJ_5K1ExudL4",
+        "API_KEY_FOR_WINDOWS_WEB": "AIzaSyDqSkXPOrxKSLVYpDbOPxNuJ_5K1ExudL4"
+      }
     },
     "platforms": [
-      "browser"
+      "browser",
+      "ios"
     ]
   }
 }

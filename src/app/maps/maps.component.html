@@ -1,6 +1,7 @@
 <div id="map_canvas" style="width: 100vw; height: 100vh;">
   <ion-item>
     <ion-label position="stacked">Buscar Ubicación</ion-label>
-    <ion-input></ion-input>
+    <ion-input id="search_address" [(ngModel)]="searchAddress"></ion-input>
+    <ion-button (click)="searchLocation()">Buscar</ion-button>
   </ion-item>
 </div>

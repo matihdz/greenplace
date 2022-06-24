@@ -7,6 +7,19 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  cards: any[] = [];
+
+  constructor() {
+    this.cards = [
+      {
+          "cardTitle": "¿Sabías que?",
+          "cardBody": "Apartado para preguntas frecuentes y datos de interés"
+      },
+      {
+          "cardTitle": "Noticias",
+          "cardBody": "En esta sección te podrás enterar de las últimas novedades sobre el medio ambiente y su f..."
+      }
+    ]
+  }
 
 }
